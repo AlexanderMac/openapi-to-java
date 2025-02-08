@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ES2022",
     "noImplicitAny": true,
     "removeComments": true,
-    "resolveJsonModule": true,
-    "target": "es2020",
-    "outDir": "./build/",
+    "target": "ES2023",
+    "outDir": "./dist/",
     "sourceMap": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,8 +13,10 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src",
-    "test",
+    "src/**/*.ts",
+    "test/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "demo"
+  ]
 }
