@@ -1,6 +1,10 @@
 import { capitalize, isArray, isNumber, isPlainObject, padLine } from './utils'
 
-type OpenApiDoc = Record<string, unknown>
+export type OpenApiDoc = Record<string, unknown>
+
+export function getLibVersion(): string {
+  return '0.0.1'
+}
 
 export class Converter {
   constructor(private openApiDoc: OpenApiDoc) {}

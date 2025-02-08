@@ -1,4 +1,5 @@
 type OpenApiDoc = Record<string, unknown>;
+declare function getLibVersion(): string;
 declare class Converter {
     private openApiDoc;
     constructor(openApiDoc: OpenApiDoc);
@@ -9,4 +10,4 @@ declare class Converter {
     private _jsToJavaType;
 }
 
-export { Converter };
+export { Converter, type OpenApiDoc, getLibVersion };

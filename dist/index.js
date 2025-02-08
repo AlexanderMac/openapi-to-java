@@ -33,6 +33,9 @@
         return value ? value.charAt(0).toUpperCase() + value.slice(1).toLowerCase() : '';
     };
 
+    function getLibVersion() {
+        return '0.0.1';
+    }
     class Converter {
         openApiDoc;
         constructor(openApiDoc) {
@@ -97,5 +100,6 @@
     }
 
     exports.Converter = Converter;
+    exports.getLibVersion = getLibVersion;
 
 }));
