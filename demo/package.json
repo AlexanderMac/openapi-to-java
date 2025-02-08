@@ -9,7 +9,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build --configuration development",
-    "build:prod": "ng build --base-href /converter/",
+    "build:prod": "ng build --base-href /openapi-to-java/",
     "make-docs": " pnpm build:prod && rm -rf ../docs && mv dist/browser ../docs",
     "lint": "ng lint --fix",
     "prettify": "prettier --write \"src/**/*.ts\"",

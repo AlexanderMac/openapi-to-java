@@ -48,7 +48,7 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/converter/",
+            "baseHref": "/openapi-to-java/",
             "polyfills": [
               "zone.js"
             ],

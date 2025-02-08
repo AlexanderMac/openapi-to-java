@@ -7,6 +7,7 @@
     <a href="LICENSE"><img src="https://img.shields.io/github/license/alexandermac/openapi-to-java.svg" alt="License"></a>
     <a href="https://badge.fury.io/js/openapi-to-java"><img src="https://badge.fury.io/js/openapi-to-java.svg" alt="npm version"></a>
   </p>
+  <h3 align="center"><a href="https://alexandermac.github.io/openapi-to-java">Demo</a></h3>
 </div>
 
 # Contents
