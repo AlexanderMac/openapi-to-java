@@ -1,0 +1,61 @@
+{
+  "name": "converter",
+  "version": "0.0.1",
+  "description": "converter demo",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build --configuration development",
+    "build:prod": "ng build --base-href /converter/",
+    "make-docs": " pnpm build:prod && rm -rf ../docs && mv dist/browser ../docs",
+    "lint": "ng lint --fix",
+    "prettify": "prettier --write \"src/**/*.ts\"",
+    "format": "pnpm lint && pnpm prettify"
+  },
+  "dependencies": {
+    "@angular/common": "^19.1.4",
+    "@angular/compiler": "^19.1.4",
+    "@angular/core": "^19.1.4",
+    "@angular/forms": "^19.1.4",
+    "@angular/platform-browser": "^19.1.4",
+    "@angular/platform-browser-dynamic": "^19.1.4",
+    "@angular/router": "^19.1.4",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/state": "^6.5.1",
+    "bootstrap": "^5.3.3",
+    "codemirror": "^6.0.1",
+    "openapi-to-java": "github:AlexanderMac/openapi-to-java",
+    "rxjs": "~7.8.1",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.1.5",
+    "@angular-eslint/builder": "^19.0.2",
+    "@angular-eslint/eslint-plugin": "^19.0.2",
+    "@angular-eslint/eslint-plugin-template": "^19.0.2",
+    "@angular-eslint/template-parser": "^19.0.2",
+    "@angular/cli": "^19.1.5",
+    "@angular/compiler-cli": "^19.1.4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "tslib": "^2.8.1",
+    "typescript": "~5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderMac/openapi-to-java"
+  },
+  "author": "Alexander Mac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderMac/openapi-to-java/issues"
+  },
+  "homepage": "https://github.com/AlexanderMac/openapi-to-java"
+}

@@ -1,0 +1,33 @@
+<h1 class="text-center mt-2">OpenAPI to Java converter</h1>
+<div style="position: absolute; right: 1em; top: 1.0em">
+  <a href="https://github.com/AlexanderMac/openapi-to-java">GitHub Repo</a>
+  <div>v{{libVersion}}</div>
+</div>
+<hr />
+
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-lg-6">
+      <h3>OpenAPI Document</h3>
+      <div class="cm" #src=""></div>
+    </div>
+    <div class="col-lg-6">
+      <h3>Java Classes</h3>
+      <div class="cm" #dest=""></div>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col text-center">
+      <button class="btn btn-primary" (click)="convert()">Convert</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <strong class="me-1">Status:</strong>
+      <span class="text-success" *ngIf="inputSuccess">{{ inputSuccess }}</span>
+      <span class="text-danger" *ngIf="inputError">{{ inputError }}</span>
+    </div>
+  </div>
+</div>
