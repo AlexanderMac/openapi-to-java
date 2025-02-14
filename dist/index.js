@@ -68,7 +68,7 @@
                     }
                 }
                 else if (isPlainObject(jsFieldTypeOrNestedObj)) {
-                    javaFieldType = fieldName;
+                    javaFieldType = capitalize(fieldName);
                     jsNestedObjs.push({
                         objName: fieldName,
                         obj: jsFieldTypeOrNestedObj,

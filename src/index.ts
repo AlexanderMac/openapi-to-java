@@ -34,7 +34,7 @@ export class Converter {
           javaFieldType = `List<${capitalize(javaFieldType)}>`
         }
       } else if (isPlainObject(jsFieldTypeOrNestedObj)) {
-        javaFieldType = fieldName
+        javaFieldType = capitalize(fieldName)
         jsNestedObjs.push({
           objName: fieldName,
           obj: jsFieldTypeOrNestedObj as OpenApiDoc,
