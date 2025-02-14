@@ -3,6 +3,7 @@ const doc1 = {
   category: {
     id: 0,
     name: 'string',
+    male: true,
   },
   name: 'doggie',
   photoUrls: ['string'],
