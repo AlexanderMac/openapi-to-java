@@ -37,7 +37,7 @@
     };
 
     function getLibVersion() {
-        return '0.0.1';
+        return '0.0.2';
     }
     class Converter {
         openApiDoc;
