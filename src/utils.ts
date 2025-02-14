@@ -20,6 +20,10 @@ export const isNumber = (value: unknown): boolean => {
   return typeof value === 'number'
 }
 
+export const isBoolean = (value: unknown): boolean => {
+  return typeof value === 'boolean'
+}
+
 export const isArray = (value: unknown): boolean => {
   return Array.isArray(value)
 }

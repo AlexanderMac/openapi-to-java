@@ -1,9 +1,9 @@
-import { capitalize, isArray, isNumber, isPlainObject, padLine } from './utils'
+import { capitalize, isArray, isBoolean, isNumber, isPlainObject, padLine } from './utils'
 
 export type OpenApiDoc = Record<string, unknown>
 
 export function getLibVersion(): string {
-  return '0.0.1'
+  return '0.0.2'
 }
 
 export class Converter {
@@ -62,12 +62,15 @@ export class Converter {
   }
 
   private _generateField(fieldName: string, fieldType: string, level: number): string {
-    return padLine(`private ${fieldType} ${fieldName};`, level + 2)
+    return padLine(`${fieldType} ${fieldName};`, level + 2)
   }
 
   private _jsToJavaType(jsType: string): string {
     if (isNumber(jsType)) {
       return 'Integer'
+    }
+    if (isBoolean(jsType)) {
+      return 'Boolean'
     }
     return 'String'
   }

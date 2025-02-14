@@ -10,6 +10,9 @@
     const isNumber = (value) => {
         return typeof value === 'number';
     };
+    const isBoolean = (value) => {
+        return typeof value === 'boolean';
+    };
     const isArray = (value) => {
         return Array.isArray(value);
     };
@@ -89,11 +92,14 @@
             return [padLine('@Data', level), padLine(`public class ${className} {`, level)];
         }
         _generateField(fieldName, fieldType, level) {
-            return padLine(`private ${fieldType} ${fieldName};`, level + 2);
+            return padLine(`${fieldType} ${fieldName};`, level + 2);
         }
         _jsToJavaType(jsType) {
             if (isNumber(jsType)) {
                 return 'Integer';
+            }
+            if (isBoolean(jsType)) {
+                return 'Boolean';
             }
             return 'String';
         }
