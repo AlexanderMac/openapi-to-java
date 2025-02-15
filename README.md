@@ -1,6 +1,6 @@
 <div align="center">
   <h1>openapi-to-java</h1>
-  <p>Converts OpenAPI JSON to Java classes</p>
+  <p>Converts OpenAPI definitions into Java classes</p>
   <p>
     <a href="https://github.com/alexandermac/openapi-to-java/actions/workflows/ci.yml?query=branch%3Amaster"><img src="https://github.com/alexandermac/openapi-to-java/actions/workflows/ci.yml/badge.svg" alt="Build Status"></a>
     <a href="https://codecov.io/gh/AlexanderMac/openapi-to-java"><img src="https://codecov.io/gh/AlexanderMac/openapi-to-java/branch/master/graph/badge.svg" alt="Code Coverage"></a>
@@ -18,8 +18,8 @@
 - [License](#license)
 
 # Features
-- Support for nested objects
-- Online editor
+- Supports OpenAPI v3.1
+- Convert single endpoint Request/Response
 
 # Usage
 ```sh
